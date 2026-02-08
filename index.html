@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Labs LLC | AI Engineering & Consulting for Healthcare, Biotech & Logistics</title>
+    <meta name="description" content="Cognitive Labs LLC builds production AI systems—clinical copilots, genomics pipelines, logistics optimizers—with compliance-aware engineering and rapid delivery.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="url(#logoGrad)" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="6" fill="url(#logoGrad)"/>
+                        <circle cx="16" cy="6" r="2.5" fill="#00e5ff"/>
+                        <circle cx="24.5" cy="21" r="2.5" fill="#7c4dff"/>
+                        <circle cx="7.5" cy="21" r="2.5" fill="#00e5ff"/>
+                        <line x1="16" y1="10" x2="16" y2="8.5" stroke="#00e5ff" stroke-width="1.5"/>
+                        <line x1="21.5" y1="18.5" x2="22.8" y2="19.5" stroke="#7c4dff" stroke-width="1.5"/>
+                        <line x1="10.5" y1="18.5" x2="9.2" y2="19.5" stroke="#00e5ff" stroke-width="1.5"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="2" y1="2" x2="30" y2="30">
+                                <stop stop-color="#00e5ff"/>
+                                <stop offset="1" stop-color="#7c4dff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Cognitive Labs</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#case-studies" class="nav-link">Capabilities</a></li>
+                <li><a href="#contact" class="nav-link cta-link">Schedule a Call</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="particle" style="--x: 10%; --y: 20%; --duration: 6s; --delay: 0s;"></div>
+            <div class="particle" style="--x: 80%; --y: 30%; --duration: 8s; --delay: 1s;"></div>
+            <div class="particle" style="--x: 50%; --y: 70%; --duration: 7s; --delay: 2s;"></div>
+            <div class="particle" style="--x: 20%; --y: 80%; --duration: 9s; --delay: 0.5s;"></div>
+            <div class="particle" style="--x: 70%; --y: 15%; --duration: 6.5s; --delay: 1.5s;"></div>
+            <div class="particle" style="--x: 90%; --y: 60%; --duration: 7.5s; --delay: 3s;"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Forward-Deployed &middot; Production-Grade &middot; 8-Week Cycles</div>
+            <h1 class="hero-title">
+                Your AI Team,<br>
+                <span class="gradient-text">Forward-Deployed.</span>
+            </h1>
+            <p class="hero-subtitle">
+                We embed with your team to build and ship production AI&mdash;agentic systems,
+                LLM pipelines, computer vision&mdash;in weeks, not quarters. Healthcare, biotech,
+                logistics.
+            </p>
+            <div class="hero-actions">
+                <a href="https://calendar.app.google/L1Bsraf5PD6q4HQw5" target="_blank" rel="noopener" class="btn btn-primary">
+                    Schedule a Call
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#process" class="btn btn-secondary">See How We Deliver</a>
+            </div>
+            <!-- Proof Block -->
+            <div class="hero-proof">
+                <div class="proof-item">
+                    <span class="proof-number">Full-Stack</span>
+                    <span class="proof-label">Data to deployment<br>ownership</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number">8 wk</span>
+                    <span class="proof-label">Target time<br>to first deploy</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number">HIPAA</span>
+                    <span class="proof-label">Compliance-aware<br>infrastructure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Engineers Who Build AI<br>for <span class="gradient-text">Real-World Problems</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Cognitive Labs LLC is an AI engineering and consulting startup
+                        focused on helping teams in healthcare, biotech, and logistics ship production AI.
+                    </p>
+                    <p>
+                        We're not a research lab that hands off prototypes. We own the full lifecycle:
+                        data assessment, model development, infrastructure, deployment, monitoring,
+                        and retraining. Our goal is to deliver working systems, not slide decks.
+                    </p>
+                    <p>
+                        We focus on domains with real constraints&mdash;working toward alignment with
+                        standards like HIPAA, SOC 2, and FDA guidelines&mdash;so your AI runs in
+                        environments where compliance matters.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Full-Lifecycle Ownership</strong>
+                                <span>From data audit to production monitoring&mdash;we don't hand off half-built prototypes</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Compliance-Aware Engineering</strong>
+                                <span>Designing toward HIPAA, SOC 2, and industry standards from day one</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>8-Week Delivery Cycles</strong>
+                                <span>Structured sprints with defined milestones, weekly demos, and clear deliverables</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-orb">
+                        <div class="orb-ring orb-ring-1"></div>
+                        <div class="orb-ring orb-ring-2"></div>
+                        <div class="orb-ring orb-ring-3"></div>
+                        <div class="orb-core">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="url(#orbGrad)" stroke-width="2" fill="none"/>
+                                <path d="M24 4v40M6 14l18 10 18-10M6 34l18-10 18 10" stroke="url(#orbGrad)" stroke-width="1.5" opacity="0.5"/>
+                                <defs>
+                                    <linearGradient id="orbGrad" x1="6" y1="4" x2="42" y2="44">
+                                        <stop stop-color="#00e5ff"/>
+                                        <stop offset="1" stop-color="#7c4dff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="orb-node" style="--angle: 0deg; --radius: 120px;">
+                            <span>ML</span>
+                        </div>
+                        <div class="orb-node" style="--angle: 72deg; --radius: 120px;">
+                            <span>NLP</span>
+                        </div>
+                        <div class="orb-node" style="--angle: 144deg; --radius: 120px;">
+                            <span>CV</span>
+                        </div>
+                        <div class="orb-node" style="--angle: 216deg; --radius: 120px;">
+                            <span>LLM</span>
+                        </div>
+                        <div class="orb-node" style="--angle: 288deg; --radius: 120px;">
+                            <span>Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section" id="team">
+                <h3 class="subsection-title">Our Team</h3>
+                <div class="team-description" data-animate>
+                    <p>We're a small, focused team of engineers and consultants with hands-on experience in AI/ML, cloud infrastructure, and full-stack development. Our backgrounds span healthcare technology, bioengineering, and enterprise software&mdash;and we bring that domain knowledge to every project we take on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">End-to-End AI &<br><span class="gradient-text">Software Delivery</span></h2>
+                <p class="section-desc">We handle every stage&mdash;from data audit to production monitoring&mdash;so you get working systems, not slide decks.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="4" y="4" width="32" height="32" rx="8" stroke="url(#svcGrad1)" stroke-width="2"/>
+                            <circle cx="14" cy="16" r="3" stroke="#00e5ff" stroke-width="1.5"/>
+                            <circle cx="26" cy="16" r="3" stroke="#7c4dff" stroke-width="1.5"/>
+                            <circle cx="20" cy="26" r="3" stroke="#00e5ff" stroke-width="1.5"/>
+                            <line x1="16.5" y1="17.5" x2="18.5" y2="24" stroke="#00e5ff" stroke-width="1" opacity="0.6"/>
+                            <line x1="23.5" y1="17.5" x2="21.5" y2="24" stroke="#7c4dff" stroke-width="1" opacity="0.6"/>
+                            <line x1="17" y1="16" x2="23" y2="16" stroke="#7c4dff" stroke-width="1" opacity="0.6"/>
+                            <defs>
+                                <linearGradient id="svcGrad1" x1="4" y1="4" x2="36" y2="36">
+                                    <stop stop-color="#00e5ff"/>
+                                    <stop offset="1" stop-color="#7c4dff"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>AI & Machine Learning Engineering</h3>
+                    <p>We build and deploy agentic AI systems, RAG pipelines, and custom models&mdash;using Claude, GPT-4o, Llama, Mistral&mdash;optimized for your cost, latency, and data-residency needs.</p>
+                    <ul class="service-features">
+                        <li>Agentic AI systems with function calling &amp; tool use</li>
+                        <li>RAG pipelines, vector search, and knowledge graphs</li>
+                        <li>Multi-agent orchestration (LangGraph, CrewAI, Claude Code)</li>
+                        <li>MLOps: CI/CD, monitoring, drift detection, retraining</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 6l12 8v12l-12 8-12-8V14l12-8z" stroke="url(#svcGrad2)" stroke-width="2"/>
+                            <path d="M20 6v28M8 14l12 6 12-6M8 26l12-6 12 6" stroke="url(#svcGrad2)" stroke-width="1" opacity="0.5"/>
+                            <defs>
+                                <linearGradient id="svcGrad2" x1="8" y1="6" x2="32" y2="34">
+                                    <stop stop-color="#00e5ff"/>
+                                    <stop offset="1" stop-color="#7c4dff"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>AI Strategy & Roadmapping</h3>
+                    <p>Not sure where to start? We assess your data, identify the highest-ROI use cases, and build a phased adoption plan with clear timelines and budget ranges.</p>
+                    <ul class="service-features">
+                        <li>Data readiness & quality assessments</li>
+                        <li>Use-case prioritization with ROI estimates</li>
+                        <li>Build vs. buy vs. fine-tune analysis</li>
+                        <li>Vendor evaluation & model cost projections</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="6" y="10" width="28" height="20" rx="4" stroke="url(#svcGrad3)" stroke-width="2"/>
+                            <path d="M16 17l-4 4 4 4M24 17l4 4-4 4M22 15l-4 10" stroke="#00e5ff" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="svcGrad3" x1="6" y1="10" x2="34" y2="30">
+                                    <stop stop-color="#00e5ff"/>
+                                    <stop offset="1" stop-color="#7c4dff"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Full-stack web, API, and cloud engineering. We build the applications that wrap around your AI&mdash;dashboards, internal tools, patient portals, and customer-facing products.</p>
+                    <ul class="service-features">
+                        <li>Full-stack web & SaaS applications</li>
+                        <li>Cloud-native architecture (AWS, GCP, Azure)</li>
+                        <li>API design, microservices, event-driven systems</li>
+                        <li>DevOps, infrastructure-as-code, CI/CD</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M8 32V16l6-8h12l6 8v16" stroke="url(#svcGrad4)" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 32h24" stroke="url(#svcGrad4)" stroke-width="2"/>
+                            <rect x="14" y="20" width="12" height="8" rx="2" stroke="#00e5ff" stroke-width="1.5"/>
+                            <line x1="20" y1="22" x2="20" y2="26" stroke="#7c4dff" stroke-width="1.5"/>
+                            <line x1="17" y1="24" x2="23" y2="24" stroke="#7c4dff" stroke-width="1.5"/>
+                            <defs>
+                                <linearGradient id="svcGrad4" x1="8" y1="8" x2="32" y2="32">
+                                    <stop stop-color="#00e5ff"/>
+                                    <stop offset="1" stop-color="#7c4dff"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Data Engineering</h3>
+                    <p>AI is only as good as its data. We build the pipelines, warehouses, and governance frameworks that make your data reliable, compliant, and AI-ready.</p>
+                    <ul class="service-features">
+                        <li>ETL/ELT pipeline design & orchestration</li>
+                        <li>Data warehouse & lakehouse architecture</li>
+                        <li>Real-time streaming (Kafka, Flink, Spark)</li>
+                        <li>Data quality, lineage, and governance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work / Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How We Deliver</span>
+                <h2 class="section-title">A Predictable Path from<br><span class="gradient-text">Problem to Production</span></h2>
+                <p class="section-desc">No black boxes. Every engagement follows a structured process with defined deliverables at each stage.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Discovery & Data Audit</h3>
+                            <span class="step-duration">Week 1</span>
+                        </div>
+                        <p>We interview stakeholders, audit your data sources, assess quality, and map constraints (regulatory, technical, organizational).</p>
+                        <div class="step-deliverables">
+                            <span class="deliverable-tag">Deliverables:</span>
+                            Data quality report, feasibility assessment, risk register, preliminary architecture
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Solution Design & Prototyping</h3>
+                            <span class="step-duration">Week 2&ndash;3</span>
+                        </div>
+                        <p>We select the right model strategy (open-source vs. hosted, cost vs. latency tradeoffs), build the data pipeline, and deliver a working proof-of-concept.</p>
+                        <div class="step-deliverables">
+                            <span class="deliverable-tag">Deliverables:</span>
+                            Architecture doc, model selection rationale, working prototype, evaluation benchmarks
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Build & Evaluate</h3>
+                            <span class="step-duration">Week 4&ndash;7</span>
+                        </div>
+                        <p>Production engineering: hardened pipelines, API endpoints, security controls, load testing. Weekly demos ensure alignment. Models are evaluated against domain-specific metrics.</p>
+                        <div class="step-deliverables">
+                            <span class="deliverable-tag">Deliverables:</span>
+                            Production-ready system, evaluation report, security review, load test results
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Deploy & Launch</h3>
+                            <span class="step-duration">Week 8</span>
+                        </div>
+                        <p>Staged rollout with canary deployments. We configure monitoring, alerting, and on-call runbooks. Your team gets full documentation and training.</p>
+                        <div class="step-deliverables">
+                            <span class="deliverable-tag">Deliverables:</span>
+                            Deployed system, monitoring dashboards, runbooks, team training session
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Monitor, Retrain & Improve</h3>
+                            <span class="step-duration">Ongoing</span>
+                        </div>
+                        <p>Post-launch, we track model performance, detect drift, manage retraining cycles, and iterate on features. Optional retainer or knowledge transfer to your team.</p>
+                        <div class="step-deliverables">
+                            <span class="deliverable-tag">Deliverables:</span>
+                            Monthly performance reports, drift alerts, model updates, governance documentation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Can Build</span>
+                <h2 class="section-title">Example Projects &<br><span class="gradient-text">Capabilities</span></h2>
+                <p class="section-desc">Here's what we're equipped to deliver&mdash;drawing on our team's experience across healthcare, biotech, and logistics.</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card" data-animate>
+                    <div class="case-industry">Healthcare</div>
+                    <h3>Agentic Clinical Copilot</h3>
+                    <div class="case-problem">
+                        <strong>Challenge:</strong> Physicians spend 2+ hours/day on EHR documentation, contributing to burnout and reduced patient face-time.
+                    </div>
+                    <div class="case-solution">
+                        <strong>Our approach:</strong> Agentic AI copilot powered by function-calling LLMs that autonomously captures encounters, generates structured clinical notes, retrieves patient context via RAG, and writes back to EHR via FHIR APIs.
+                    </div>
+                    <div class="case-stack">
+                        <span class="stack-tag">Agentic AI</span>
+                        <span class="stack-tag">Claude Code</span>
+                        <span class="stack-tag">RAG</span>
+                        <span class="stack-tag">FHIR</span>
+                        <span class="stack-tag">LangGraph</span>
+                        <span class="stack-tag">AWS</span>
+                    </div>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span class="result-number">~40%</span>
+                            <span class="result-label">Target charting time reduction</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">Agentic</span>
+                            <span class="result-label">Autonomous workflows</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">8 wk</span>
+                            <span class="result-label">Target delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card" data-animate>
+                    <div class="case-industry">AI Engineering</div>
+                    <h3>Agentic Function-Calling Cloud Platform</h3>
+                    <div class="case-problem">
+                        <strong>Challenge:</strong> Engineering teams need AI agents that can reason, plan, and execute multi-step tasks autonomously&mdash;not just answer questions.
+                    </div>
+                    <div class="case-solution">
+                        <strong>Our approach:</strong> Build production agentic systems using Claude Code, OpenClaw, and custom tool-use frameworks. Agents with function calling, code execution, memory, and multi-agent orchestration deployed as cloud services.
+                    </div>
+                    <div class="case-stack">
+                        <span class="stack-tag">Claude Code</span>
+                        <span class="stack-tag">OpenClaw</span>
+                        <span class="stack-tag">Function Calling</span>
+                        <span class="stack-tag">MCP</span>
+                        <span class="stack-tag">LangChain</span>
+                        <span class="stack-tag">Docker</span>
+                    </div>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span class="result-number">Multi-Agent</span>
+                            <span class="result-label">Orchestration at scale</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">Tool-Use</span>
+                            <span class="result-label">Function-calling pipelines</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">8 wk</span>
+                            <span class="result-label">Target delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card" data-animate>
+                    <div class="case-industry">Logistics</div>
+                    <h3>AI-Powered Route &amp; Fleet Intelligence</h3>
+                    <div class="case-problem">
+                        <strong>Challenge:</strong> Logistics companies using static routing face excess mileage, missed delivery windows, and rising fuel costs.
+                    </div>
+                    <div class="case-solution">
+                        <strong>Our approach:</strong> Agentic route optimization with real-time re-planning. AI agents ingest live traffic, weather, and fleet telemetry, then autonomously re-route using constraint-solving and reinforcement learning.
+                    </div>
+                    <div class="case-stack">
+                        <span class="stack-tag">Agentic AI</span>
+                        <span class="stack-tag">RL</span>
+                        <span class="stack-tag">OR-Tools</span>
+                        <span class="stack-tag">Kafka</span>
+                        <span class="stack-tag">Vector DB</span>
+                        <span class="stack-tag">React</span>
+                    </div>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span class="result-number">20-30%</span>
+                            <span class="result-label">Potential cost reduction</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">Real-time</span>
+                            <span class="result-label">Agentic re-routing</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">8 wk</span>
+                            <span class="result-label">Target delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Compliance Section -->
+    <section class="compliance" id="compliance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trust & Security</span>
+                <h2 class="section-title">Designed With<br><span class="gradient-text">Compliance in Mind</span></h2>
+                <p class="section-desc">We're not yet certified, but we engineer with compliance from the start&mdash;aligning our practices with industry standards so you're ready when it's time to certify.</p>
+            </div>
+
+            <!-- Data Privacy Statement -->
+            <div class="data-privacy-statement" data-animate>
+                <div class="privacy-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 12l2 2 4-4" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>We don't train foundation models on your data. Your data is isolated and retained only per agreement.</p>
+            </div>
+
+            <div class="compliance-grid">
+                <div class="compliance-card" data-animate>
+                    <div class="compliance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>HIPAA Alignment</h4>
+                    <p>We design infrastructure with HIPAA requirements in mind&mdash;encryption, access controls, and audit logging&mdash;so you're prepared for compliance as you scale.</p>
+                </div>
+                <div class="compliance-card" data-animate>
+                    <div class="compliance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="#7c4dff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>SOC 2 Practices</h4>
+                    <p>We follow SOC 2-aligned security practices: encrypted storage, network segmentation, and incident response procedures. Formal certification is on our roadmap.</p>
+                </div>
+                <div class="compliance-card" data-animate>
+                    <div class="compliance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Data Governance</h4>
+                    <p>Data lineage tracking, retention policies, and anonymization pipelines. We document our processes to support your audit and compliance needs.</p>
+                </div>
+                <div class="compliance-card" data-animate>
+                    <div class="compliance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="#7c4dff" stroke-width="2"/>
+                            <path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83" stroke="#7c4dff" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4>AI Risk Management</h4>
+                    <p>Model evaluation, bias testing, and human-in-the-loop guardrails. We design with the NIST AI Risk Management Framework as a guiding reference.</p>
+                </div>
+            </div>
+            <div class="compliance-cta">
+                <p>Questions about our security practices? <a href="#contact">Reach out</a>&mdash;we're happy to discuss in detail.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Talk About<br><span class="gradient-text">Your Project</span></h2>
+                <p class="section-desc">Schedule a call directly or send us a message&mdash;no commitment required.</p>
+            </div>
+
+            <!-- Schedule a Call CTA -->
+            <div class="schedule-cta" data-animate>
+                <div class="schedule-cta-content">
+                    <div class="schedule-cta-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="3" stroke="#00e5ff" stroke-width="2"/>
+                            <path d="M3 10h18" stroke="#00e5ff" stroke-width="2"/>
+                            <path d="M8 2v4M16 2v4" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="16" r="1.5" fill="#00e5ff"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Schedule a Discovery Call</h3>
+                        <p>Book a free 30-minute call to discuss your goals, feasibility, and whether we're the right fit.</p>
+                    </div>
+                </div>
+                <a href="https://calendar.app.google/L1Bsraf5PD6q4HQw5" target="_blank" rel="noopener" class="btn btn-primary">
+                    Book a Time
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="contact-divider">
+                <span>or send us a message</span>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-what-happens">
+                        <h4>What happens next?</h4>
+                        <ol>
+                            <li>You book a call or send a message below</li>
+                            <li>We respond within 1 business day</li>
+                            <li>30-min discovery call to discuss your project</li>
+                            <li>If there's a fit, we send a scoping proposal within a week</li>
+                        </ol>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:support@coglabaz.com">support@coglabaz.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Phoenix, AZ &middot; United States</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/support@coglabaz.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">What do you need? <span class="required">*</span></label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="ai-ml">AI & Machine Learning Engineering</option>
+                            <option value="consulting">AI Strategy & Roadmapping</option>
+                            <option value="software">Software Development</option>
+                            <option value="data">Data Engineering</option>
+                            <option value="not-sure">Not sure yet — need guidance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select a range (optional)</option>
+                            <option value="25k-50k">$25K – $50K</option>
+                            <option value="50k-100k">$50K – $100K</option>
+                            <option value="100k-250k">$100K – $250K</option>
+                            <option value="250k+">$250K+</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your project <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="4" placeholder="What problem are you trying to solve? What does success look like? Any timeline constraints?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display:none;">Sending...</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-arrow">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Message sent! We'll respond within 1 business day with next steps.</span>
+                    </div>
+                    <div class="form-error" id="formError">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#ff5252" stroke-width="2"/>
+                            <path d="M15 9l-6 6M9 9l6 6" stroke="#ff5252" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Something went wrong. Please email us directly at <a href="mailto:support@coglabaz.com">support@coglabaz.com</a>.</span>
+                    </div>
+                    <p class="form-note">Your information is encrypted and never shared. See our <a href="privacy.html">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="14" stroke="url(#logoGrad2)" stroke-width="2"/>
+                                <circle cx="16" cy="16" r="6" fill="url(#logoGrad2)"/>
+                                <circle cx="16" cy="6" r="2.5" fill="#00e5ff"/>
+                                <circle cx="24.5" cy="21" r="2.5" fill="#7c4dff"/>
+                                <circle cx="7.5" cy="21" r="2.5" fill="#00e5ff"/>
+                                <defs>
+                                    <linearGradient id="logoGrad2" x1="2" y1="2" x2="30" y2="30">
+                                        <stop stop-color="#00e5ff"/>
+                                        <stop offset="1" stop-color="#7c4dff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Cognitive Labs</span>
+                    </a>
+                    <p>AI engineering and consulting startup. Healthcare, biotech, and logistics. Based in Phoenix, AZ.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#case-studies">Capabilities</a>
+                        <a href="#contact">Schedule a Call</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#services">AI/ML Engineering</a>
+                        <a href="#services">Strategy Consulting</a>
+                        <a href="#services">Software Development</a>
+                        <a href="#services">Data Engineering</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="#contact">Request a DPA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cognitive Labs LLC. All rights reserved. &middot; Phoenix, AZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
