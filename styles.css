@@ -75,7 +75,8 @@ img {
     height: auto;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -219,6 +220,7 @@ ul, ol {
     display: flex;
     align-items: center;
     gap: 10px;
+    line-height: 0;
     font-size: 1.15rem;
     font-weight: 700;
     color: #fff;
@@ -226,6 +228,22 @@ ul, ol {
 
 .logo-text {
     letter-spacing: -0.02em;
+}
+
+.brand-logo {
+    display: block;
+    width: auto;
+    height: 48px;
+    object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
+}
+
+.brand-logo-footer {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .nav-links {
@@ -334,10 +352,13 @@ ul, ol {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0;
         transform: translateY(0) scale(0.5);
     }
+
     50% {
         opacity: 0.6;
         transform: translateY(-30px) scale(1);
@@ -467,6 +488,7 @@ ul, ol {
         opacity: 0;
         transform: translateY(24px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -478,6 +500,7 @@ ul, ol {
         opacity: 0;
         transform: translateY(-16px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -596,8 +619,13 @@ ul, ol {
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .orb-core {
@@ -855,7 +883,7 @@ ul, ol {
     margin-bottom: 12px;
 }
 
-.service-card > p {
+.service-card>p {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
     margin-bottom: 20px;
@@ -977,7 +1005,7 @@ ul, ol {
     white-space: nowrap;
 }
 
-.step-content > p {
+.step-content>p {
     font-size: 0.92rem;
     color: var(--color-text-secondary);
     margin-bottom: 16px;
@@ -1230,7 +1258,7 @@ ul, ol {
     margin-bottom: 20px;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: var(--color-text-secondary);
     margin-bottom: 32px;
     line-height: 1.7;
