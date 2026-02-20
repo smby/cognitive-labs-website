@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const formData = new FormData(contactForm);
-            formData.append('_captcha', 'false');
             formData.append('_subject', 'New inquiry from Cognitive Labs website');
             formData.append('_template', 'table');
 
